@@ -157,11 +157,10 @@ module Myshop
     config.active_record.raise_in_transactional_callbacks = true
 
     Expressly.default_configuration = Expressly::Configuration.new(
-      '61c8c55e-9365-11e5-ac6c-281878baaac8:d62e517165bf86562d7fe0dbf8ac2076',
+      'your_expressly_api_key',
       MyExpresslyProvider.new,
-      'http://localhost:3000',
-      { :locale => 'en_GB' },
-      'http://localhost:8080/api')
+      'https://myshop.com/',
+      { :locale => 'en_GB' })
   end
 end
 
