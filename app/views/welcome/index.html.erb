@@ -1,2 +1,10 @@
 <h1>Welcome#index</h1>
 <p>Find me in app/views/welcome/index.html.erb</p>
+
+<% if flash[:campaign_customer_uuid] %>
+	<% begin %>
+		<%= raw Expressly::default_configuration.expressly_provider.fetch_migration_confirmation_html(flash[:campaign_customer_uuid]) %>
+	<% rescue %>
+		<!-- alert the user that something went wrong -->
+	<% end %>
+<% end %>
