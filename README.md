@@ -1,4 +1,4 @@
-![Expressly](https://buyexpressly.com/assets/img/expressly-logo-sm-gray.png)
+![Expressly](http://developer.buyexpressly.com/img/expressly-logo-sm-gray.png)
 # Expressly Plug-in Ruby on Rails Reference Implementation
 
 This project is supplied as a reference for any developers wishing to integrate their rails e-commerce platform
